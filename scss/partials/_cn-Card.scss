@@ -1,0 +1,487 @@
+.cn-Card {
+    margin: 0 -15px;
+    // border: 1px solid red;
+
+    @include flexbox();
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
+    @include justify-content(center);
+
+    @media (max-width: $max-small) {
+        @include flex-direction(column);
+    }
+
+
+    &--3-item {
+        @media (max-width: $max-small) {
+            @include flex-direction(row);
+        }
+
+        .cn-Card-item {
+            width: calc(calc(100% / 3) - 30px);
+
+            @media (max-width: $max-small) {
+                width: calc(calc(100% / 2) - 30px);
+            }
+
+            &-image {
+                background-color: #091143;
+
+                img {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+
+    &--4-item {
+        .cn-Card-item {
+            width: calc(calc(100% / 4) - 30px);
+        }
+    }
+
+    &--carousel {
+
+        //trick for firsttime is hidden before load class slick-initialized
+        &.slick-initialized {
+            display: block;
+        }
+
+        display: none;
+        // padding-bottom: 100px;
+
+        @media (max-width: $max-medium) {
+            margin: 50px 0;
+        }
+
+        @media (max-width: $max-small) {
+            @include flex-direction(row);
+            margin: 0 auto;
+            // padding-bottom: 0;
+        }
+
+        .slick-track {
+            // display: flex;
+            // flex-direction: row;
+        }
+
+        .cn-Card-item {
+
+            // width: calc(calc(100% / 3) - 60px);
+            width: auto;
+            position: relative;
+            display: block;
+
+            border: 2px solid $primary-color;
+            margin: 30px;
+            // display: none;
+            min-height: 570px;
+
+            @media (max-width: $max-small) {
+                width: calc(100% - 60px);
+                min-height: unset;
+            }
+
+            &-image {
+                margin-left: -30px;
+                margin-top: -30px;
+                width: calc(100% - 0px);
+
+            }
+
+
+            &:hover {
+                .cn-Card-item-image {
+                    transform: scale(1.05);
+                }
+            }
+
+        }
+
+        .slick-dots {
+            // border: 1px solid red;
+            // bottom: 80px;
+            position: relative;
+
+            li {
+                transition: all linear 0.2s;
+
+                &[role="presentation"] {
+                    width: 15px;
+                    height: 15px;
+
+                    &.slick-active {
+                        width: 25px;
+
+                        button {
+                            background-color: $primary-color;
+                        }
+
+                    }
+                }
+
+                button {
+                    &::before {
+                        display: none;
+                    }
+
+                    background-color:#ccc;
+                    background-image: none;
+                    text-indent: unset;
+                    border-radius:15px;
+                    width: 100%;
+                    height: 100%;
+                    transition: all linear 0.2s;
+
+                    &:hover {
+                        background-color: $primary-color;
+                    }
+                }
+            }
+
+            @media (max-width: $max-small) {
+                right: 0;
+                bottom: 0;
+            }
+        }
+    }
+
+    &--auto-carousel {
+        .cn-Card-item {
+            width: calc(calc(100% / 6) - 30px);
+
+            &-image {
+                img {
+                    object-fit: contain;
+                    filter: grayscale(100);
+                    transition: all linear 0.2s;
+
+                    &:hover {
+                        filter: grayscale(0);
+                        transform: scale(1.05);
+                    }
+                }
+            }
+        }
+    }
+
+    &--award {
+        // flex-wrap: nowrap;
+
+        @media (max-width: $max-small) {
+            @include flex-direction(row);
+        }
+
+        .cn-Card-item {
+            overflow: hidden;
+            margin: 0;
+            width: calc(100% / 6);
+
+            @media (max-width: $max-small) {
+                width: calc(100% / 2);
+            }
+
+            &-title {
+                @include flexbox();
+                @include flex-direction(row);
+                @include align-items(flex-end);
+                @include justify-content(center);
+
+                position: absolute;
+                display: flex;
+                width: 100%;
+                left: 0;
+                bottom: -100%;
+                text-align: center;
+                right: 0;
+                background-color: $primary-color;
+                padding: 10px;
+                color: white;
+                font-weight: 700;
+                transition: all 0.2s linear 0.2s;
+                height: auto;
+            }
+
+            &-image {
+                // background-color: #091143;
+
+                img {
+                    position: relative;
+                    filter: grayscale(100);
+                    -webkit-filter: grayscale(100);
+                    opacity: 0.85;
+                }
+            }
+
+            &:hover {
+                .cn-Card-item-image {
+                    img {
+                        filter: grayscale(0);
+                        -webkit-filter: grayscale(0);
+                        transform: scale(1.1);
+                        opacity: 1;
+                    }
+                }
+
+                .cn-Card-item-title {
+                    bottom: 0;
+                    // background-color: rgba(black, 0.65);
+                }
+            }
+        }
+    }
+
+    &--blog {
+
+        // display: block;
+        // padding-bottom: 100px;
+
+        @media (max-width: $max-medium) {
+            @include flex-direction(column);
+        }
+
+
+        .cn-Card-item {
+
+            width: calc(calc(100% / 3) - 60px);
+            // width: auto;
+            position: relative;
+            display: block;
+
+            border: 2px solid $primary-color;
+            margin: 30px;
+            // display: none;
+            min-height: unset;
+
+
+            @media (max-width: $max-medium) {
+                width: calc(100% - 110px);
+                min-height: unset;
+                max-width: unset;
+            }
+
+            &-image {
+                margin-left: -30px;
+                margin-top: -30px;
+                width: calc(100% - 0px);
+
+            }
+
+
+            &:hover {
+                .cn-Card-item-image {
+                    transform: scale(1.05);
+                }
+            }
+
+        }
+
+        &-action {
+            border: 1px solid red;
+        }
+
+    }
+
+
+    &-item {
+        position: relative;
+
+        display: block;
+
+        max-width: calc(50% - 30px);
+        margin: 15px;
+
+        background-color: transparent;
+        border: none;
+        // border: 1px solid rgba(0, 0, 0, .06);
+        // background-color: white;
+
+
+        // @include border-radius(10px);
+
+        @media (max-width: $max-small) {
+            max-width: 100%;
+        }
+
+        &-icon {
+            @include translateY(-50%);
+            top: 50%;
+            left: 0;
+            right: 0;
+            margin: auto;
+            text-align: center;
+            position: absolute;
+            transition: all 0.2s linear 0.2s;
+        }
+
+        &-image {
+            position: relative;
+            transition: all linear 0.2s;
+            overflow: hidden;
+
+            // background-color: #ccc;
+
+            &--portrait {
+                @include aspect-ratio(3, 4);
+            }
+
+            &--landscape {
+                @include aspect-ratio(4, 3);
+            }
+
+            &--square {
+                @include aspect-ratio(1, 1);
+            }
+
+            &--frame {
+                &::before {
+                    position: absolute;
+                    content: "";
+                    background-color: $primary-color;
+                    width: calc(100% / 2);
+                    height: calc(100% / 2);
+                    top: -8px;
+                    right: -8px;
+                }
+
+                // @include aspect-ratio(4, 3);
+                position: relative;
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            img {
+                position: absolute;
+
+                width: 100%;
+                height: 100%;
+
+                object-fit: cover;
+                transition: all linear 0.2s;
+            }
+
+        }
+
+        &-content {
+            flex: 1 1 0;
+
+            padding: 30px;
+
+            color: black;
+
+            &-title {
+                @include fontMontserrat(700);
+                font-size: 18px;
+                margin-bottom: 5px;
+            }
+
+            &-subtitle {
+                color: #777;
+                margin-bottom: 10px;
+
+                p {
+                    margin: 0;
+                }
+            }
+
+            &-description {
+                p {
+                    margin: 0;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        &-title-block {
+            padding: 15px;
+            font-size: 16px;
+            font-weight: 300;
+            background-color: white;
+            width: calc(100% - 20px);
+            margin-top: -10px;
+            margin-left: -10px;
+            position: relative;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            max-width: 99%;
+            overflow: hidden;
+            transition: all linear 0.2s;
+        }
+
+        &:hover {
+            .cn-Card-item-title-block {
+                background-color: $primary-color;
+                color: white;
+            }
+
+            .cn-Card-item-image--frame {
+                .cn-Card-item-icon {
+                    top: -100%;
+                }
+
+                .cn-Card-item-image {
+                    img {
+                        transform: scale(1.1);
+                        opacity: 0.85;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+
+    &-carousel {
+
+        // display: none;
+
+        &.slick-initialized {
+            display: block;
+        }
+
+        .slick {
+
+            &-slide {
+                &.c-Card-item {
+                    @include flexbox();
+                }
+            }
+
+            &-dots {
+                position: relative;
+                bottom: 0;
+
+                >li {
+                    width: auto;
+                    height: auto;
+
+                    >button {
+                        &::before {
+                            display: none;
+                        }
+
+                        width: 8px;
+                        height: 8px;
+                        transition: all linear 0.2s;
+                        border-radius: 50%;
+                        background-color: rgba(0, 0, 0, 0.15);
+                        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+                        padding: 0;
+                    }
+
+                    &.slick-active {
+                        >button {
+                            transform: scale(1.2);
+                            background-color: rgba(0, 0, 0, 0.65);
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+
+}

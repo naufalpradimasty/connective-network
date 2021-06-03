@@ -1,0 +1,213 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Starting Page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Topnav section -->
+    <!-- <div data-include="./includes/header.html"></div> -->
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" sizes="16x16 24x24 32x32 48x48 64x64" href="./favicon/favicon.ico">
+
+    <!-- Mobile (Android, iOS & others) -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-touch-icon-144x144.png">
+
+    <!-- Windows 8 Tiles -->
+    <meta name="msapplication-TileImage" content="./favicon/tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+
+    <!-- iOS Settings -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- CSS Vendor -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <!-- DO NOT COPY has been already on dev-->
+    <link rel="stylesheet" href="./css/css-dev.css">
+
+    <!-- style Template Connective Network -->
+    <link rel="stylesheet" href="./css/connective-network-main.css">
+
+</head>
+
+<body>
+    <!--[if lt IE 8]> <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a
+        href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="[component_name]">
+        <div class="cn-Header">
+            <nav class="navbar navbar-default navbar-fixed-top" data-scroll>
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+
+                        <a href="#" class="navbar-brand navbar-brand--image--circle">
+                            <img src="https://via.placeholder.com/96x96/ffffff/f0541b/?text=LOGO" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class=""><a href="#">Our Story</a></li>
+                            <li><a href="#">Use Cases</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Plans</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modalContact">Contact Us</a></li>
+                            <li><a href="#">Existing site? <span>Sign In</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- /.cn-Header -->
+
+        <div class="modal fade" id="modalContact" tabindex="-1" role="dialog" aria-labelledby="modalContact" data-backdrop="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span></button>
+                        <h4 class="modal-title" id="">Contact Us</h4>
+                    </div>
+                    <!--/ .modal-header -->
+
+                    <div class="modal-body">
+
+                        <form role="form">
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12">
+                                    <div class="form-group">
+                                        <label>Message <span class="text-danger">*</span></label>
+                                        <textarea class="form-control" rows="10" placeholder=""></textarea>
+                                        <small id="" class="help-block">Info here</small>
+                                    </div>
+                                    <!-- .form-group -->
+                                </div>
+                                <!--/ .col-xs-12 -->
+                            </div>
+                            <!-- .row -->
+
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        <div class="modal-actions text-center">
+                                            <!-- <a href="#" class="btn btn-lg btn-default">Cancel</a> -->
+                                            <a href="#" class="btn btn-lg btn-default">Submit</a>
+                                        </div>
+                                        <!-- <button type="submit" class="btn btn-block btn-primary">Submit</button> -->
+                                    </div>
+                                    <!--/ .form-group -->
+                                </div>
+                                <!--/ .col-xs-12 -->
+                            </div>
+                        </form>
+
+                    </div>
+                    <!--/ .modal-body -->
+
+                    <div class="modal-footer hide">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <!-- <button type="button" class="btn btn-primary">Sign Up</button> -->
+                    </div>
+                    <!--/ .modal-footer -->
+                </div>
+                <!--/ .modal-content -->
+            </div>
+            <!--/ .modal-dialog -->
+        </div>
+    </div>
+    <!-- /.end component-->
+
+    <div class="[component_name]">
+
+        <div class="cn-Section cn-Section--width-full cn-Section--height-100">
+
+            <div class="cn-Section-page" style="background-color:#000000;">
+
+                <!-- <div class="cn-Section-image-overlay"></div> -->
+                <!-- .cn-Section-image-overlay -->
+
+                <div class="cn-Section-page-inner">
+                    <div class="cn-Section-bg" data-rellax-speed="">
+                        <img src="https://images.pexels.com/photos/2403251/pexels-photo-2403251.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="image-section1">
+                    </div>
+                    <!-- /.cn-Section-bg -->
+
+                    <div class="cn-Section-body">
+
+                        <div class="container">
+
+                            <div class="row">
+                                <div class="col-xs-12 col-md-7">
+                                    <!-- here -->
+                                </div>
+                                <!-- /.END col -->
+
+                                <div class="col-xs-12 col-md-5">
+                                    <div class="cn-Section-body-title text-right" data-scroll>
+                                        <!-- <h4>the edge you need to succeed.</h4> -->
+                                        <span style="font-size: 64px; color:#f0541b; text-transform: uppercase; background-color: #ffffff;"><b>Connective</b></span>
+                                    </div>
+                                    <!-- /.cn-Section-body-title -->
+
+                                    <div class="cn-Section-body-subtitle text-right">
+                                        An award-winning end to end community platform for members to create network
+                                        value - in a secure branded world of your own
+                                    </div>
+                                    <!-- /.cn-Section-body-subtitle -->
+
+                                    <div class="cn-Section-body-actions text-right">
+                                        <a href="#" class="btn btn-lg cn-Button cn-Button--rounded cn-Button--gradient">Self-Service</a>
+                                        <a href="#" class="btn btn-lg cn-Button cn-Button--rounded cn-Button-default">White
+                                            Label</a>
+                                    </div>
+                                    <!-- /.cn-Section-body-text-actions -->
+
+                                    <!-- /.col-xs-12 col-md-12 -->
+                                </div>
+                                <!-- /.row -->
+                            </div>
+                            <!-- /.container -->
+
+                        </div>
+                        <!-- .cn-Section-body -->
+                    </div>
+                    <!-- .cn-Section-page-inner -->
+
+                </div>
+                <!-- .cn-Section-page -->
+
+            </div>
+            <!-- .cn-Section -->
+
+        </div>
+        <!-- /.end component-->
+    </div>
+    <!-- /.end component-->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.min.js"></script>
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

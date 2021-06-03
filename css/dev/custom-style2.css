@@ -1,0 +1,203 @@
+
+/**
+ * component-10001-navbar-brand.css
+ *
+ * Petunjuk Pemakaian
+ * 3x 1 tablet sesudah berhubungan
+ *
+ * Normal
+ * <a href="#" class="navbar-brand navbar-brand--image">
+ *
+ * Square
+ * <a href="#" class="navbar-brand navbar-brand--image navbar-brand--image--square">
+ *
+ * Rounded
+ * <a href="#" class="navbar-brand navbar-brand--image navbar-brand--image--rounded">
+ *
+ * Circle
+ * <a href="#" class="navbar-brand navbar-brand--image navbar-brand--image--circle">
+ *
+ */
+
+.cs2-navbar-brand.navbar-brand--image--square>img
+{
+    border-radius: 0;
+}
+.cs2-navbar-brand.navbar-brand--image--rounded>img
+{
+    border-radius: 8px;
+}
+.cs2-navbar-brand.navbar-brand--image--circle>img
+{
+    border-radius: 100%;
+}
+
+
+#cs2 > div > div > .btn.btn-floating {
+    -webkit-transition: ease .3s;
+    -moz-transition: ease .3s;
+    -ms-transition: ease .3s;
+    -o-transition: ease .3s;
+    transition: ease .3s;
+    height: 72px;
+    min-height: 72px;
+    max-height: 72px;
+    width: 72px;
+    min-width: 72px;
+    max-width: 72px;
+    line-height: 72px;
+    display: block;
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 100%;
+    z-index: 999;
+    box-shadow: 1px 1px 12px rgba(0,0,0,0.1);
+    background-color: #4aa244;
+    border-color: #4aa244;
+    color: white;
+}
+
+#cs2 > div > div > .btn.btn-floating>.fa {
+    font-size: 32px;
+    display: block;
+    position: absolute;
+    margin: 0 auto;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    -moz-transform: translate3d(-50%, -50%, 0);
+    -ms-transform: translate3d(-50%, -50%, 0);
+    -o-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+}
+
+#cs2 div > div > .btn.btn-floating:hover, .btn.btn-floating:focus, .btn.btn-floating:active {
+    transform: scale(1.025);
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.1);
+}
+
+#myComm-link.active{ float:left;background:#f46424 !important;color:#fff;border:1px solid #f46424;margin-right:10px}
+#suggestComm-link.active{ background:#f46424 !important;color:#fff;border:1px solid #f46424;margin-right:10px}
+.cs2-txtKnowledgeSearch{width:60%;}
+
+/*profile page */
+.btn-profile-aboutme,.btn-profile-interest,
+.btn-profile-expert,.btn-profile-experience {cursor: pointer;}
+.btn-profile-aboutme.active,.btn-profile-interest.active,
+.btn-profile-expert.active,.btn-profile-experience.active,.btn-profile-article.active,.btn-profile-chat.active {border-bottom: 3px solid #f26530;}
+
+/*campaign*/
+.form-control#select-campaign-type{
+    width:165px;
+}
+
+
+
+/*stream*/
+.cs2-toolbar-comment-dialogue{
+    height:60px;
+}
+
+/*profile*/
+li.cs2-profile-view:hover{
+    cursor:pointer;
+}
+
+/*affiliate*/
+.affiliate-detail-view{
+    cursor: pointer;
+}
+.affiliate-detail-view > div > img.media-object {
+    height:70px;
+}
+
+/*share*/
+a.share, li.share{cursor:pointer;}
+
+/*event button*/
+.decision-making > .going-to{cursor:pointer;}
+.decision-making > .maybe-to{cursor:pointer;}
+.decision-making > .no-to{cursor:pointer;}
+.decision-making > .share-to{cursor:pointer;}
+
+/*photo in member*/
+img.user-pp-member {
+    max-height:70px;
+    width:auto;
+}
+
+.event-attachments > a > .img-responsive{
+    max-height: 160px;
+    width: auto;
+}
+
+.openReadMore{
+    cursor:pointer;
+}
+
+/*personal chat*/
+.list-group-chat > ul > li.dialogItem{
+    cursor:pointer;
+}
+.list-group-chat > ul > li.dialogItem.active{
+    cursor:auto;
+}
+
+/* form-group */
+.form-group-submit {
+    margin-top:-15px;
+}
+
+.view-fundrising{
+    cursor:pointer;
+}
+
+/* workspace */
+body.workspace-register{background-color:#fff !important;background:none !important;padding-top: 0px !important;}
+/*.c-Slider--cr-subdomain{
+    padding-top:150px;
+    height:200px;
+}*/
+.btn-txt-black{
+    color: #000000 !important;
+}
+#myModalLabelcontac > img{
+    max-height:80px;
+}
+img.ws-logoHeader{
+    max-height:100px !important;
+    width: auto !important;
+}
+.workspace-switch-add-new{
+    margin: 8px 0 0 5px;
+    padding:6px !important;
+}
+
+/*chat*/
+.cs2-profile-chat-sub-title{
+    margin: -17px 0 0 31px;
+}
+.chat-box{
+    max-height: 630px;
+}
+.cs2-chat-title{
+    margin-left:14px;
+}
+
+#optionExpertise{
+    width:100px;
+}
+
+#editProfileFormCancel{
+    margin-top:-5px;
+}
+
+#ws-input-search{
+    height: 42px !important;
+}

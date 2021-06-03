@@ -1,0 +1,462 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Self Service</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Topnav section -->
+    <!-- <div data-include="./includes/header.html"></div> -->
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" sizes="16x16 24x24 32x32 48x48 64x64" href="./favicon/favicon.ico">
+
+    <!-- Mobile (Android, iOS & others) -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-touch-icon-144x144.png">
+
+    <!-- Windows 8 Tiles -->
+    <meta name="msapplication-TileImage" content="./favicon/tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+
+    <!-- iOS Settings -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- CSS Vendor -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <!-- DO NOT COPY has been already on dev-->
+    <link rel="stylesheet" href="./css/css-dev.css">
+
+    <!-- style Template Connective Network -->
+    <link rel="stylesheet" href="./css/connective-network-main.css">
+
+</head>
+
+<body>
+    <!--[if lt IE 8]> <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a
+        href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+
+
+
+    <div id="cs2" class="cn-Section container-fluid">
+
+        <div id="grid-gallery" class="self-service">
+            <div class="[component_name]">
+                <div class="cn-Header">
+                    <nav class="navbar navbar-default navbar-fixed-top" data-scroll>
+                        <div class="container">
+                            <div class="navbar-header">
+                                <button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+
+                                <a href="#" class="navbar-brand navbar-brand--image--circle">
+                                    <img src="https://via.placeholder.com/96x96/ffffff/f0541b/?text=LOGO" alt="Logo">
+                                </a>
+                            </div>
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class=""><a href="#">Our Story</a></li>
+                                    <li><a href="#">Use Cases</a></li>
+                                    <li><a href="#">Features</a></li>
+                                    <li><a href="#">Plans</a></li>
+                                    <li><a href="#" data-toggle="modal" data-target="#modalContact">Contact Us</a></li>
+                                    <li><a href="#">Existing site? <span>Sign In</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <!-- /.cn-Header -->
+
+                <div class="modal fade" id="modalContact" tabindex="-1" role="dialog" aria-labelledby="modalContact" data-backdrop="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title" id="">Contact Us</h4>
+                            </div>
+                            <!--/ .modal-header -->
+
+                            <div class="modal-body">
+
+                                <form role="form">
+
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12">
+                                            <div class="form-group">
+                                                <label>Message <span class="text-danger">*</span></label>
+                                                <textarea class="form-control" rows="10" placeholder=""></textarea>
+                                                <small id="" class="help-block">Info here</small>
+                                            </div>
+                                            <!-- .form-group -->
+                                        </div>
+                                        <!--/ .col-xs-12 -->
+                                    </div>
+                                    <!-- .row -->
+
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <div class="modal-actions text-center">
+                                                    <!-- <a href="#" class="btn btn-lg btn-default">Cancel</a> -->
+                                                    <a href="#" class="btn btn-lg btn-default">Submit</a>
+                                                </div>
+                                                <!-- <button type="submit" class="btn btn-block btn-primary">Submit</button> -->
+                                            </div>
+                                            <!--/ .form-group -->
+                                        </div>
+                                        <!--/ .col-xs-12 -->
+                                    </div>
+                                </form>
+
+                            </div>
+                            <!--/ .modal-body -->
+
+                            <div class="modal-footer hide">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <!-- <button type="button" class="btn btn-primary">Sign Up</button> -->
+                            </div>
+                            <!--/ .modal-footer -->
+                        </div>
+                        <!--/ .modal-content -->
+                    </div>
+                    <!--/ .modal-dialog -->
+                </div>
+            </div>
+            <!-- /.end component-->
+
+            <div class="[component_name]">
+                <div class="cn-Section cn-Section--width-full cn-Section--height-100">
+                    <div class="auth">
+                        <div class="auth-bg">
+                            <style>
+                                .component_16 .auth-bg {
+                                    background: ;
+                                }
+                            </style>
+                            <div class="auth-bg__inner">
+                                <img src="https://images.pexels.com/photos/2403251/pexels-photo-2403251.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Background">
+                            </div>
+                        </div>
+                        <!--/ .auth-bg -->
+                        <div class="auth-box">
+                            <div class="container">
+                                <div class="row">
+                                    <style>
+                                        #plans,
+                                        #plans ul,
+                                        #plans ul li {
+                                            margin: 0;
+                                            padding: 0;
+                                            list-style: none;
+                                        }
+
+                                        #pricePlans:after {
+                                            content: '';
+                                            display: table;
+                                            clear: both;
+                                        }
+
+                                        #pricePlans {
+                                            zoom: 1;
+                                        }
+
+                                        #pricePlans {
+                                            max-width: 69em;
+                                            margin: 0 auto;
+                                        }
+
+                                        #pricePlans #plans .plan {
+                                            background: #fff;
+                                            float: left;
+                                            width: 100%;
+                                            text-align: center;
+                                            border-radius: 5px;
+                                            margin: 0 0 20px 0;
+                                            -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+                                            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+                                        }
+
+                                        .planContainer .title h2 {
+                                            font-size: 2.125em;
+                                            font-weight: 300;
+                                            color: #3e4f6a;
+                                            margin: 0;
+                                            padding: .6em 0;
+                                            height: 110px;
+                                            overflow-x: auto;
+                                            overflow-y: hidden;
+                                        }
+
+                                        .planContainer .title h2.bestPlanTitle {
+                                            background: #F9F9F9;
+                                            background: -webkit-linear-gradient(top, #475975, #364761);
+                                            background: -moz-linear-gradient(top, #475975, #364761);
+                                            background: -o-linear-gradient(top, #475975, #364761);
+                                            background: -ms-linear-gradient(top, #475975, #364761);
+                                            background: linear-gradient(top, #475975, #364761);
+                                            color: #fff;
+                                            border-radius: 5px 5px 0 0;
+                                        }
+
+                                        .planContainer .price p {
+                                            background: #3e4f6a;
+                                            background: -webkit-linear-gradient(top, #475975, #364761);
+                                            background: -moz-linear-gradient(top, #475975, #364761);
+                                            background: -o-linear-gradient(top, #475975, #364761);
+                                            background: -ms-linear-gradient(top, #475975, #364761);
+                                            background: linear-gradient(top, #475975, #364761);
+                                            color: #fff;
+                                            font-size: 1.2em;
+                                            font-weight: 700;
+                                            height: 2.6em;
+                                            line-height: 2.6em;
+                                            margin: 0 0 1em;
+                                        }
+
+                                        .planContainer .price p.bestPlanPrice {
+                                            background: ;
+                                        }
+
+                                        .planContainer .price p span {
+                                            color: #8394ae;
+                                        }
+
+                                        .planContainer .options {
+                                            margin-top: 10em;
+                                        }
+
+                                        .planContainer .options li {
+                                            font-weight: 700;
+                                            color: #364762;
+                                            line-height: 2.5;
+                                        }
+
+                                        .planContainer .options li span {
+                                            font-weight: 400;
+                                            color: #979797;
+                                        }
+
+                                        .planContainer .button a {
+                                            text-transform: uppercase;
+                                            text-decoration: none;
+                                            color: #3e4f6a;
+                                            font-weight: 700;
+                                            letter-spacing: 3px;
+                                            line-height: 2.8em;
+                                            border: 2px solid #3e4f6a;
+                                            display: inline-block;
+                                            width: 80%;
+                                            height: 2.8em;
+                                            border-radius: 4px;
+                                            margin: 1.5em 0 1.8em;
+                                        }
+
+                                        .planContainer .button a.bestPlanButton {
+                                            text-transform: uppercase;
+                                            text-decoration: none;
+                                            color: ;
+                                            font-weight: 700;
+                                            letter-spacing: 3px;
+                                            line-height: 2.8em;
+                                            border: 2px solid;
+                                            display: inline-block;
+                                            width: 80%;
+                                            height: 2.8em;
+                                            border-radius: 4px;
+                                            margin: 1.5em 0 1.8em;
+                                        }
+
+                                        #credits {
+                                            text-align: center;
+                                            font-size: .8em;
+                                            font-style: italic;
+                                            color: #777;
+                                        }
+
+                                        #credits a {
+                                            color: #333;
+                                        }
+
+                                        #credits a:hover {
+                                            text-decoration: none;
+                                        }
+
+                                        @media screen and (min-width: 481px) and (max-width: 768px) {
+                                            #pricePlans #plans .plan {
+                                                width: 49%;
+                                                margin: 0 2% 20px 0;
+                                            }
+                                        }
+
+                                        @media screen and (min-width: 769px) and (max-width: 1024px) {
+                                            #pricePlans #plans .plan {
+                                                width: 49%;
+                                                margin: 0 2% 20px 0;
+                                            }
+                                        }
+
+                                        @media screen and (min-width: 1025px) {
+                                            #pricePlans {
+                                                margin: 2em auto;
+                                            }
+
+                                            #pricePlans #plans .plan {
+                                                width: 25%;
+                                                margin: 0 1.33% 20px 0;
+                                                -webkit-transition: all .25s;
+                                                -moz-transition: all .25s;
+                                                -ms-transition: all .25s;
+                                                -o-transition: all .25s;
+                                                transition: all .25s;
+                                            }
+
+                                            #pricePlans #plans &gt;
+
+                                            li:last-child {
+                                                margin-right: 0;
+                                            }
+
+                                            #pricePlans #plans .plan:hover {
+                                                -webkit-transform: scale(1.04);
+                                                -moz-transform: scale(1.04);
+                                                -ms-transform: scale(1.04);
+                                                -o-transform: scale(1.04);
+                                                transform: scale(1.04);
+                                            }
+
+                                            .planContainer .button a {
+                                                -webkit-transition: all .25s;
+                                                -moz-transition: all .25s;
+                                                -ms-transition: all .25s;
+                                                -o-transition: all .25s;
+                                                transition: all .25s;
+                                            }
+
+                                            .planContainer .button a:hover {
+                                                background: #3e4f6a;
+                                                color: #fff;
+                                            }
+
+                                            .planContainer .button a.bestPlanButton:hover {
+                                                background: ;
+                                                border: 2px solid;
+                                            }
+
+                                            ul.options {
+                                                height: 210px;
+                                                overflow-y: auto;
+                                            }
+
+                                            li.options {
+                                                height: 210px;
+                                                overflow-y: auto;
+                                                text-align: left;
+                                            }
+
+                                            li.price &gt;
+
+                                            p {
+                                                text-align: center;
+                                            }
+                                        }
+
+                                        @media(max-width: 991px) {
+                                            .component_225 .auth .auth-box {
+                                                position: relative;
+                                                top: auto;
+                                                left: auto;
+                                                transform: none;
+                                                width: 90%;
+                                                max-width: 90%;
+                                                min-width: 90%;
+                                                margin: 0 auto;
+                                            }
+                                        }
+                                    </style>
+                                    <section id="pricePlans">
+                                        <ul id="plans">
+                                            <li class="plan">
+                                                <ul class="planContainer">
+                                                    <li class="title">
+                                                        <h2>Free</h2>
+                                                    </li>
+                                                    <li class="price">
+                                                        <p class="bestPlanPrice">$0/month</p>
+                                                    </li>
+                                                    <li class="options">
+                                                    </li>
+                                                    <li class="button"><a class="btn-signup-membership bestPlanButton" href="/signup/workspace" data-id="q522bdYj83wzBePo2">Sign Up</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="plan">
+                                                <ul class="planContainer">
+                                                    <li class="title">
+                                                        <h2>Team</h2>
+                                                    </li>
+                                                    <li class="price">
+                                                        <p class="bestPlanPrice">$300/month</p>
+                                                    </li>
+                                                    <li class="options">
+                                                    </li>
+                                                    <li class="button"><a class="btn-signup-membership bestPlanButton" href="/signup/workspace" data-id="MNxYawMA8MWBwm8q7">Sign Up</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="plan">
+                                                <ul class="planContainer">
+                                                    <li class="title">
+                                                        <h2>Profesional</h2>
+                                                    </li>
+                                                    <li class="price">
+                                                        <p class="bestPlanPrice">$600/month</p>
+                                                    </li>
+                                                    <li class="options">
+                                                    </li>
+                                                    <li class="button"><a class="btn-signup-membership bestPlanButton" href="/signup/workspace" data-id="yJxhvbuebxsyER4k5">Sign Up</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </div>
+                                <!--/ .row -->
+                            </div>
+                        </div>
+                        <!--/ .container-fluid -->
+                    </div>
+                    <!-- /.auth -->
+                </div>
+                <!-- /.cn-Section cn-Section--width-full cn-Section--height-100 -->
+
+            </div>
+            <!-- /.end component-->
+        </div>
+        <!-- /.self-service -->
+    </div>
+    <!-- /.end container-fluid-->
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.min.js"></script>
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

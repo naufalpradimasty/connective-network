@@ -1,0 +1,40 @@
+/*
+    Base style
+*/
+@import 'base';
+
+/*
+    Header
+*/
+// @import 'component_1001';
+
+
+/*
+    Section Page
+*/
+// @import 'component_1002';
+// @import 'c-Section-page';
+
+
+// style 
+// @import 'c-Slider';
+// @import 'c-Form';
+// @import 'c-User';
+// @import 'c-Modal';
+// @import 'c-Social-footer';
+
+/* Parallax Style */
+@import 'cn-Header';
+@import 'cn-Button';
+@import 'cn-Section';
+@import 'cn-Card';
+@import 'cn-Box';
+@import 'cn-Icons';
+@import 'cn-List';
+@import 'cn-Footer';
+@import 'cn-Modal';
+@import 'cn-popup';
+
+
+/* Page Builder */
+@import 'c-Exp-builder';

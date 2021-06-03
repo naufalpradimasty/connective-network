@@ -1,0 +1,45 @@
+/*
+	font-family: 'Open Sans', sans-serif;
+*/
+//Font Smoothing
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Lato:300,400,700,900|Montserrat:300,400,500,700,900');
+
+@mixin font-smoothing($value: true) {
+    @if ($value==true) {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    @else {
+        -moz-osx-font-smoothing: auto;
+        -webkit-font-smoothing: subpixel-antialiased;
+    }
+}
+
+@mixin fontOpenSans($font-weight: 400) {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: $font-weight;
+}
+
+@mixin fontLato($font-weight: 400) {
+    font-family: 'Lato', sans-serif;
+    font-weight: $font-weight;
+}
+
+@mixin fontMontserrat($font-weight: 400) {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: $font-weight;
+}
+
+@mixin fontAwesome() {
+    font-family: FontAwesome;
+
+    display: inline-block;
+    // font-size     : inherit;
+
+    text-rendering: auto;
+    @include font-smoothing;
+}
+
+//line-height
+$base-line-height: 1.6 !default;

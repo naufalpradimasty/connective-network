@@ -1,0 +1,66 @@
+.cn-Button {
+    min-width: 160px;
+    position: relative;
+    top: 0;
+
+    transition: all linear .2s;
+
+    &.btn-lg {
+        padding: 12px 16px;
+        min-width: calc(100% / 2 - 30px)
+    }
+
+    &-primary {
+        background-color: $primary-color;
+        color: white;
+
+        &:hover {
+            color: white;
+        }
+    }
+
+    &-default {
+
+        color: $primary-color;
+        border-color: rgba(0, 0, 0, .125);
+        background-color: white;
+
+        &:hover,
+        &focus {
+            background-color: #ffffff;
+            color: darken($primary-color, 7%);
+        }
+    }
+
+    &--rounded {
+        @include border-radius(25px);
+    }
+
+    &--gradient {
+        color: white;
+        @extend %u-Gradient-orange;
+        border-color: $primary-color;
+
+        &:hover {
+            color: white;
+        }
+
+    }
+
+    &--outline {
+        border: 1px solid $primary-color;
+        background-color: transparent;
+        color: $primary-color;
+    }
+
+    &:hover,
+    &focus {
+        top: 0;
+        letter-spacing: 1.5px;
+        outline: none;
+    }
+
+    &:active {
+        top: 1px;
+    }
+}

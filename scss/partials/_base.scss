@@ -1,0 +1,94 @@
+/*!
+ * Prefix cp = Component Parallax
+ */
+
+
+
+*[class*="cn-"] {
+    // color: black;
+    // background-color: $bg-body;
+    // @include fontOpenSans(400);
+
+    * {
+        transition: none;
+    }
+
+    @include fontOpenSans(400);
+    font-size: 14px;
+    line-height: normal;
+
+    [data-rellax-zindex="2"] {
+        z-index: 2;
+    }
+
+
+    //set default bootstrap font-size
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @include fontOpenSans(400);
+    }
+
+    h1 {
+        @include rfs(36);
+    }
+
+    h2 {
+        @include rfs(30);
+    }
+
+    h3 {
+        @include rfs(24);
+    }
+
+    h4 {
+        @include rfs(18);
+    }
+
+    h5 {
+        @include rfs(14);
+    }
+
+    h6 {
+        @include rfs(12);
+    }
+}
+
+body {
+    color: black;
+    background-color: $bg-body;
+    // @include fontLato(400);
+    @include fontOpenSans(400);
+    @include rfs(16);
+}
+
+//Gradient
+%u-Gradient-orange {
+    @include gradient-directional($primary-color, #f87b1b, 135deg);
+}
+
+//disable rellax when mobile view
+@media (max-width: $max-medium) {
+    .rellax {
+        transform: translate3d(0, 0, 0) !important;
+    }
+}
+
+
+.cn-Section-page {
+
+    [data-scroll] {
+        transition: opacity 1s;
+    }
+
+    [data-scroll="in"] {
+        opacity: 1;
+    }
+
+    [data-scroll="out"] {
+        opacity: 0;
+    }
+}

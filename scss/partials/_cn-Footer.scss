@@ -1,0 +1,102 @@
+.cn-Footer {
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+
+    @media (max-width: $max-small) {
+        flex-direction: column;
+        margin: 0 -15px;
+    }
+
+    &-item {
+        &:nth-of-type(4) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: $bg-body;
+            // margin-top: -30px;
+            // margin-bottom: -30px;
+            padding-right: 0;
+            padding-left: 30px;
+
+            @media (max-width: $max-small) {
+                padding: 15px;
+                margin: 0;
+                background-color: white;
+                justify-content: center;
+            }
+        }
+
+        width: calc(100% / 3);
+        padding : 0 50px;
+        position: relative;
+
+        @media (max-width: $max-small) {
+            width: 100%;
+            text-align: center;
+        }
+
+        h4 {
+            @include fontMontserrat(600);
+            border-bottom: 1px solid;
+            line-height: 40px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+                margin: 8px 0;
+                font-weight: 300;
+
+                a {
+                    border-bottom: 1px dotted transparent;
+                    color: black;
+                }
+
+                &:hover {
+                    font-weight: 400;
+
+                    a {
+                        border-color: black;
+                    }
+                }
+            }
+        }
+    }
+
+    &-social {
+        width: 100%;
+
+        li {
+            a {
+                font-size: 11px;
+            }
+        }
+    }
+
+    &-copyright {
+        // border: 1px solid red;
+        // font-size: 12px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        &-icon {
+            @extend %u-Icons--small;
+            margin-right: 10px;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        small {
+            min-width: 0;
+            flex: 1 0 0;
+        }
+    }
+}

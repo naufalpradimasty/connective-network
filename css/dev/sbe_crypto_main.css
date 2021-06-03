@@ -1,0 +1,123 @@
+/* SBE CRYTPTO CURRENCY */
+/* BY DNA 31 MAY, 2019 */
+#carii-v51>nav>div>div>.navbar-form>div>input[type=text]{width:24em}
+h1,h2,h3,h4{font-family: 'Montserrat', sans-serif;font-weight:600}
+h3{font-weight:600;font-size:26px;}
+h4{font-size:24px;}
+label.control-label{color: #5a6579;}
+input{color:#222;}
+button.sbe{background-color:#5a6579;color:#fff !important;border:none !important}
+tr,td,body{font-family: 'Roboto', sans-serif;}
+body{background:#f0f1f6;}
+.popup-loginbar{
+    margin: auto;
+    background: #fff;
+    float: none;
+    height: 450px;
+    border-radius:6px;
+}
+.auth-copy > h2 >p,.auth-copy > p > p{color:#fff}
+.logo-upper > img{
+    margin: auto;
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+.popup-loginbar > h3{
+    font-weight:600;
+    text-align: center;
+    text-transform: uppercase;
+    color: #5a6579;
+}
+.user-avatar{
+    background: #d8dae3;
+    display: grid;
+    height: 260px;
+    text-align: center;
+    width:320px;
+    border-radius: 100%;
+    padding:0;
+
+}
+.user-avatar > img{
+    margin: auto;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+    height: 100%;}
+.sbe-crypto > .tab-content > .tab-pane{margin:40px 0 0 0;}
+.sbe-crypto > .tab-content {
+    background: #fff;
+    padding-bottom: 20px;
+    display: inline-block;
+}
+.toolbar-inner{
+    width: 60%;
+    clear: both;
+    margin: auto;
+}
+.container-fluid.sbe-crypto{padding-left: calc(100% - 90%);padding-right: calc(100% - 90%);}
+.buy-tokens > ul{    text-align: left;
+    margin: auto;
+    width: 160px;}
+.buy-tokens > ul > li{margin-bottom:5px;}
+.buy-tokens > ul > li > input[type="radio"]{margin-right:5px;}
+.buy-tokens > ul > li > #amount{position: relative;top: -20px;left: 15px;}
+.toolbar-sold-amount{padding-bottom: 110px}
+.sbe-crypto>.nav-tabs>li.active>a{background:#5a6579;color:#fff;}
+.sbe-crypto>.nav-tabs>li.second>a{background:#d8dae3;color:#5a6579;}
+.sbe-crypto>.nav-tabs>li.third>a{background:#ccc;color:#fff;}
+
+.supply{background:url(../img/supply-backdrop.png)no-repeat; border: 1px solid #cccccc4f;background-position: 100% 15px;box-shadow: 0 2px 12px #cccccc47;border-radius: 8px;padding:5px 15px}
+.supply > .numbers{color:#3851ca;}
+.sold > .numbers{color:#db392f}
+.sold{background:url(../img/sold-backdrop.png)no-repeat; border: 1px solid #cccccc4f;background-position: 100% 15px;box-shadow: 0 2px 12px #cccccc47;border-radius: 8px;padding:5px 15px}
+
+.ppm,.subscription{text-align:center;    display: grid;
+    align-items: center;
+    margin-bottom:100px;
+    vertical-align: middle;
+    height: 240px;
+    margin-top: 35px;}
+.signed-aggrement{margin:0 225px}
+.holders-name{text-align:center}
+.holders-name,hr{clear:both;}
+.toolbar-inner > div.supply > h3{color:#3851ca;}
+.toolbar-inner > div.sold > h3{color:#db392f}
+.footmark{font-size:12px;padding-top:20px}
+i.separator{    font-size: 40px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    vertical-align: middle;
+    height: 100px;}
+.buy-tokens{
+    border-radius:10px;
+    background: url(../img/overlay-price.png) #788192 no-repeat;
+    background-position:0 100%;
+    text-align: center;
+    color: #fff;
+    background-size: 100%;
+    padding:20px 20px 30px;
+}
+.buy-tokens > p > p {color:#fff !important;}
+button.getinvoice{background:#db392f !important;color:#fff !important;border:None !Important;margin-left:16%}
+
+.destination-info {text-align:right}
+.destination-info > .name-info{font-size:18px}
+.description-infos{clear: both;padding-top: 30px;padding-left: 8px;}
+.description-issue{margin-top: 30px;margin-bottom: 30px;}
+.logo-company-lobby{font-size:20px;}
+.logo-company-lobby > img{margin-right:10px;}
+.modal-body.invoice{padding:0;}
+.banking-information{background:#D4D1CA;padding:10px 15px 5px 15px}
+.inner-wrapper-lobby{padding:15px;margin-top:20px}
+.modal.invoice{zoom:1.2}
+
+
+@media (max-width:768px){
+    button.getinvoice{margin-left:0}
+}
+@media (min-width:1920px){
+    .container-fluid.sbe-crypto{padding:0 160px;}
+}

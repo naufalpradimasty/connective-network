@@ -1,0 +1,319 @@
+@import '../modules/all';
+// @import 'partials/all';
+
+.component_68 .c-Section--height-100 .c-Section-image-inner {
+    @media screen and (max-width: 1024px) {
+        min-height: 90vh;
+    }
+
+    // max ipad pro
+
+    @media screen and (max-width: 767px) {
+        min-height: 90vh;
+    }
+
+    // phone & max ipad
+
+}
+
+.cn-Section-onboarding {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+
+    &-left {
+        width: 32%;
+        padding: 25px;
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        direction: rtl;
+
+        @media screen and (max-width: 1024px) {
+            width: 40%;
+        }
+
+        // max ipad pro
+
+        @media screen and (max-width: 767px) {
+            padding: 15px;
+        }
+
+        // phone & max ipad
+
+        &--gradient {
+            // @extend %u-Gradient-orange;
+            background-color: $primary-color;
+            @include gradientHorizontal($primary-color, #ff6c00);
+        }
+
+        .c-Section-page--cr-subdomain .c-Section {
+            &-body {
+                &-logo {
+                    height: 20px;
+                }
+            }
+
+            &-user {
+
+                .c-User-body-title {
+                    padding-top: 7px;
+                    line-height: normal;
+                    font-size: 13px;
+                }
+
+                .c-User-body-link {
+                    line-height: normal;
+                    font-size: 11px;
+                    font-style: italic;
+                }
+            }
+        }
+
+
+
+
+        .cn-Section-onboarding-left .c-Section-body .container .row div[class^="col-"] {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .c-Section {
+
+            &-image {
+                &-inner {
+                    padding: 0;
+                }
+            }
+
+            &-body {
+                height: 100%;
+                direction: ltr;
+
+                &-header {
+                    // border: 1px solid white;
+                    margin-bottom: 20px;
+                    flex-direction: column;
+
+                }
+
+                &-title {
+                    font-size: 24px;
+                    text-align: center;
+                    margin-top: 30px;
+                    margin-bottom: 10px;
+                    text-shadow: 0 0px 0px rgba(0, 0, 0, 0.0);
+
+                    @media screen and (max-width: 767px) {
+                        font-size: 18px;
+                        margin-top: 15px;
+                        text-align: left;
+                    }
+
+                    // phone & max ipad
+                }
+
+                &-text {
+                    text-align: center;
+                    font-size: 12px;
+                    line-height: 1.8;
+
+                    @media screen and(max-width: 767px) {
+                        text-align: left;
+                        font-size: 11px;
+                        line-height: 1.8;
+                    }
+
+                    // phone & max ipad
+                }
+
+                .c-Slider {
+                    // border: 1px solid white;
+
+                    &.c-Slider--cr-subdomain {
+                        min-height: unset;
+                    }
+
+                    &-dots {
+                        .slick-dots {
+                            li {
+                                &.slick-active {
+                                    button {
+                                        transform: scale(0.8);
+                                        background-color: white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &-controls {
+                        margin: 0;
+                    }
+                }
+
+                .container {
+                    width: auto;
+                    margin: 0 -15px;
+
+                    .row {
+                        flex-direction: column;
+
+                        div[class^="col-"] {
+                            width: 100%;
+
+                            .c-Section-body-header {
+                                // border: 1px solid white;
+
+                                .c-Section-user {
+                                    max-width: 50%;
+                                }
+                            }
+
+                            .c-Slider.c-Slider--cr-subdomain {
+                                min-height: unset;
+                            }
+
+                            .c-Section-formOnboarding {
+                                padding-left: 0;
+
+                                .c-Form--onboarding {
+
+                                    .row {
+                                        flex-direction: column;
+                                        min-height: unset;
+
+                                        .form-group {
+                                            margin-bottom: 8px;
+                                            text-align: center;
+
+                                            .input-lg {
+                                                height: 30px;
+                                                padding: 10px 16px;
+                                                font-size: 13px;
+                                                line-height: 1.3333333;
+                                                border-radius: 6px;
+
+                                                @media screen and (max-width: 767px) {
+                                                    height: 20px;
+                                                    padding: 9px 8px;
+                                                    font-size: 10px;
+                                                }
+
+                                                // phone & max ipad
+                                            }
+
+                                            .c-Button-default.btn-lg,
+                                            .c-Button-primary.btn-lg,
+                                            .c-Button-secondary.btn-lg {
+                                                font-size: 14px;
+                                                padding: 15px 40px;
+
+                                                @media screen and (max-width: 767px) {
+                                                    font-size: 11px;
+                                                    padding: 7px 28px;
+                                                }
+
+                                                // phone & max ipad
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .c-Section-body-footer--onboarding {
+                                color: white;
+                                text-align: center;
+                                align-items: center;
+
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    &-right {
+        flex: 1 0 0;
+        height: 100%;
+        background-color: black;
+        min-width: 0;
+    }
+
+    &-image {
+        position: relative;
+        height: 100%;
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .forgotpass {
+        font-size: 10px;
+        margin-top: -3px;
+        margin-bottom: 10px;
+
+        @media screen and (max-width: 767px) {
+            font-size: 7px;
+            text-align: left !important;
+        }
+
+        // phone & max ipad
+    }
+
+    .no-gutter {
+        padding-right: 0px;
+        margin-bottom: 15px;
+
+        &-left {
+            @media (min-width: 768px) {
+                padding-right: 0px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .c-Section-form,
+    .c-Section-formOnboarding,
+    .c-Section-formOnboarding-stepper {
+        padding-left: 0px;
+    }
+
+    .cn-Section-onboarding-left .c-Section-body .container .row div[class^="col-"] .c-Section-body-footer--onboarding {
+        margin-top: 50px;
+        font-size: 10px;
+
+        @media screen and (max-width: 767px) {
+            font-size: 7px;
+            line-height: 2;
+        }
+
+        // phone & max ipad
+    }
+
+    .c-Form--onboarding .form-group .input-group .input-group-addon--dropdown {
+        min-width: 200px;
+
+        @media (max-width: 1366px) {
+            min-width: 190px;
+        }
+
+        @media (max-width: $max-large) {
+            min-width: 160px;
+        }
+
+        select {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+}

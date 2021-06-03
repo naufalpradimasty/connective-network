@@ -1,0 +1,24 @@
+// .cpb-component__item 
+
+.cpb-component__container {
+    @media (min-width: $min-xxlarge) {}
+
+    @media (min-width: 768px) {}
+
+    @media (min-width: 1840px) {}
+
+    .cn-Header {
+        .navbar-default {
+            position: absolute;
+        }
+    }
+
+    .c-Section-body-popup {
+
+        .modal {}
+
+        &--is-hidden {}
+    }
+
+    .modal-dialog {}
+}
